@@ -3,15 +3,25 @@ This application is a Flask / Python application, created to demonstrate how to 
 
 1. http://host:port/autocomplete?str=a_word
 
-Where a_word is a letter, a partial word, or sentences.
+Where a_word is a letter, a partial word, or sentences. Example:
+
+```angular2html
+    curl -H "Content-Type:text/plain" -s  http://localhost:5000/?str=mac
+```
 
 2.  http://host:port/
 
-This option simply list all data available.
+This option simply list all data available. Example:
+
+
+```angular2html
+    curl -H "Content-Type:text/plain" -s  http://localhost:5000/?str=mac
+```
+
 
 3. http://host:port/web
 
-This last option is supposed to be used in a browser, so the user can experience autocomplete while typing in an input field. It has the same feature as item 1 except in a browser other than in curl.
+This last option is supposed to be used in a browser only, so the user can experience autocomplete while typing in an input field.
 
 # Dataset
 This app uses its own data. The datasource is a separate component where is possible to quickly configure from where you want to collect your data. This implementation includes public data from the IMDB Movies website as well as a SQLlite database populated with public data from the website medium. You can find the links below:
