@@ -1,0 +1,12 @@
+{
+    "search-app":{
+        "webhost": "0.0.0.0",
+        "webport": 5000,
+        "ds-available": ["imdb", "sql3"],
+        "ds-active":"sql3",
+        "dbname": "db/sql3.db",
+        "dbtable": "mytable",
+        "dbcolumn": "contents"
+    }
+}
+
