@@ -15,7 +15,7 @@ This option simply list all data available. Example:
 
 
 ```angular2html
-    curl -H "Content-Type:text/plain" -s  http://localhost:5000/?str=mac
+    curl -H "Content-Type:text/plain" -s  http://localhost:5000
 ```
 
 
