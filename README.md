@@ -1,4 +1,4 @@
-#The Project
+# The Project
 This application is a Flask / Python application, created to demonstrate how to construct an API to search for data while suggesting completion as the user invokes the API. One can use a browser or the linux command <b>curl</b> to show the data. It has 3 endpoints:
 
 1. http://host:port/autocomplete?str=a_word
@@ -47,7 +47,7 @@ The easiest way is to build "search=app" as a Docker container, assuming you hav
 ```
 This will create a Python Slim based Docker image.
 
-#How to run
+# How to run
 Once the container is created, you can run it with the command below:
 ```angular2html
     docker run -d --rm --name search-app -p 5000:5000 search-app:1.0
@@ -61,22 +61,22 @@ Where:
     -p allows to map host port : container port
     The last name is the Docker image to run.
 
-#Using the app
+# Using the app
 Now that the app is up and running, you can start consuming data. 
 
 Please see screenshots under "static/screenshots" directory on this repo for more information on how to get data from this App.
 
-#Deploy to Cloud
+# Deploy to Cloud
 There are basically two ways to deploy this app on any cloud: using <b>NON-MANAGED</b> and <b>MANAGED</b> cloud services. And remember, each cloud provider has its own rules and process to accomplish this.
 
-##Non-Managed cloud services
+## Non-Managed cloud services
 For non-managed services, it means you have to set up your own virtual machines, just like you would on your bare metal machine. That means setting up the whole environment, including all tools and libraries, as explained above.  
 
-##Managed cloud services
+## Managed cloud services
 Managed services mean you are able to easily build the app using the cloud provider Docker services. Again, each provider has a slightly different process.
 
-####AWS
+#### AWS
 
 AWS uses ECS (EC2 Container Service) to natively deploy Docker containers. Once you have proper access to this service, you need to download the ECS CLI to interact with the environment, create your ECS context and build/deploy your containers. You can find more information [on Docker](https://docs.docker.com/cloud/ecs-integration/) and [on AWS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html).
 
-Last update: 01/17/2022.
+Last update: <b>01/17/2022.</b>
